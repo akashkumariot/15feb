@@ -6,8 +6,19 @@ window.addEventListener('load', function () {
         setTimeout(() => {
             preloader.style.display = 'none';
         }, 500);
-    }, 1500);
+    }, 800); // Reduced from 1500ms to 800ms
 });
+
+// Fallback: Hide preloader after 3 seconds no matter what
+setTimeout(() => {
+    const preloader = document.getElementById('preloader');
+    if (preloader && preloader.style.display !== 'none') {
+        preloader.classList.add('fade-out');
+        setTimeout(() => {
+            preloader.style.display = 'none';
+        }, 500);
+    }
+}, 3000);
 
 // ===== Particle Canvas Animation =====
 const canvas = document.getElementById('particleCanvas');
