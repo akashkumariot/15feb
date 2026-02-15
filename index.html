@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivratri Special - For You ❤️</title>
+    <meta name="description" content="A special Shivratri message for you Baccha">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Preload animation */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+            transition: opacity 0.5s ease;
+        }
+
+        .preloader.fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loader-om {
+            font-size: 5rem;
+            color: #ffd700;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader-om">ॐ</div>
+    </div>
+
+    <!-- Animated Canvas Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Animated Background Elements -->
+    <div class="background-animation">
+        <div class="floating-om">ॐ</div>
+        <div class="floating-om">ॐ</div>
+        <div class="floating-om">ॐ</div>
+        <div class="floating-trishul">🔱</div>
+        <div class="floating-trishul">🔱</div>
+        <div class="floating-flower">🌺</div>
+        <div class="floating-flower">🌺</div>
+        <div class="floating-flower">🌺</div>
+        <div class="floating-flower">🌺</div>
+        <div class="floating-flower">🌺</div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="divine-glow"></div>
+            <h1 class="main-title">
+                <span class="om-symbol">ॐ</span>
+                <span class="title-text">Har Har Mahadev</span>
+                <span class="om-symbol">ॐ</span>
+            </h1>
+            <div class="shivratri-greeting">
+                <h2>Maha Shivratri</h2>
+                <p class="date">15 February 2026</p>
+            </div>
+            <div class="trishul-divider">🔱</div>
+        </section>
+
+        <!-- Message Section -->
+        <section class="message-section">
+            <div class="message-card">
+                <div class="card-glow"></div>
+                <h3 class="message-title">Tumhare Liye Special ❤️</h3>
+                <div class="message-content">
+                    <p class="hindi-text">
+                        Jaise Shiv aur Parvati ka pyaar anant hai,<br>
+                        Waise hi hamara saath bhi hamesha ke liye hai.
+                        Tum chinta mat krna meri jaan hum humesha saath rahenge
+                        Marte dum tak sath janam tak I love you so much baccha.
+                    </p>
+                    <p class="hindi-text">
+                        Is pavitra din par,<br>
+                        Main Mahadev se yehi prarthana karta hoon,<br>
+                        Ki tumhari har khushi poori ho,<br>
+                        Aur hum hamesha saath rahein Or khush rahe
+                        I miss you so much baccha
+                    </p>
+                    <div class="heart-divider">
+                        <span class="heart">💖</span>
+                        <span class="heart">💖</span>
+                        <span class="heart">💖</span>
+                    </div>
+                    <p class="blessing">
+                        Har Har Mahadev 🙏<br>
+                        <span class="sub-blessing">Shiv Parvati ki kripa tumpar hamesha bani rahe</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote-section">
+            <div class="quote-card">
+                <div class="quote-icon">"</div>
+                <p class="quote-text">
+                    शिव की भक्ति में शक्ति है,<br>
+                    पार्वती के प्रेम में शांति है,<br>
+                    और तुम्हारे साथ में मेरी खुशियाँ हैं
+                </p>
+                <div class="quote-author">- तुम्हारा हमेशा के लिए</div>
+            </div>
+        </section>
+
+        <!-- Divine Image Section -->
+        <section class="divine-image-section">
+            <div class="image-container">
+                <div class="image-frame">
+                    <img src="https://i.pinimg.com/1200x/b3/5e/0e/b35e0e2c9468efdedfa67f6ac005c6a0.jpg"
+                        alt="Shiv Parvati" class="shiva-image" id="shivaImage">
+                </div>
+                <p class="image-caption">🕉️ Shiv Parvati 🕉️</p>
+            </div>
+        </section>
+
+        <!-- Love Timeline -->
+        <section class="timeline-section">
+            <h3 class="section-title">Kuch Baatein</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">💫</div>
+                    <div class="timeline-content">
+                        <h4>Tumhari Mehndi</h4>
+                        <p>Hmare pyaar ka saboot hai uska gehra rang</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">💖</div>
+                    <div class="timeline-content">
+                        <h4>Pyaar Ka Ehsaas</h4>
+                        <p>Har pal tumhare saath khaas hai</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">🌟</div>
+                    <div class="timeline-content">
+                        <h4>Aaj Aur Hamesha</h4>
+                        <p>Shivratri par ye vaada - saath rahenge hamesha</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Animated Counter -->
+        <section class="counter-section">
+            <div class="counter-grid">
+                <div class="counter-item">
+                    <div class="counter-number" data-target="2726">0</div>
+                    <p>Din Saath</p>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" data-target="65424">0</div>
+                    <p>Ghante Khushiyan</p>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" data-target="1">0</div>
+                    <p>Pyaar Anant</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Blessing Section -->
+        <section class="blessing-section">
+            <h3 class="section-title">Shiv Ashirwad</h3>
+            <div class="blessing-grid">
+                <div class="blessing-item" data-blessing="1">
+                    <div class="blessing-icon">🕉️</div>
+                    <p>Sukh</p>
+                </div>
+                <div class="blessing-item" data-blessing="2">
+                    <div class="blessing-icon">🔱</div>
+                    <p>Shakti</p>
+                </div>
+                <div class="blessing-item" data-blessing="3">
+                    <div class="blessing-icon">🌺</div>
+                    <p>Prem</p>
+                </div>
+                <div class="blessing-item" data-blessing="4">
+                    <div class="blessing-icon">✨</div>
+                    <p>Shanti</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text">
+                Made with 💖 on Maha Shivratri<br>
+                <span class="footer-mantra">ॐ नमः शिवाय</span>
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
